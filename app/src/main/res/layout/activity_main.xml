@@ -40,7 +40,8 @@
         <Button
             android:id="@+id/sound"
             android:layout_width="50dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="V"/>
         <Button
             android:id="@+id/send"
             android:layout_alignParentRight="true"
@@ -66,12 +67,26 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/above"
         android:layout_above="@+id/bottom">
+        <!--android:stackFromBottom="true">-->
     </ListView>
     <!--语音底部状态栏-->
     <LinearLayout
-        android:gravity="center_vertical"
+        android:id="@+id/voice"
+        android:visibility="gone"
+        android:background="#ced8d7"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+        <Button
+            android:id="@+id/write"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="T"/>
+        <Button
+            android:id="@+id/pressvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按住说话"/>
     </LinearLayout>
 </RelativeLayout>
